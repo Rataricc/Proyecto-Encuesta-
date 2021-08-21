@@ -29,10 +29,10 @@ Usamos [Git](https://git-scm.com/) para el versionado. Para todas las versiones 
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Ivan Braslavsky Beveraggi** - *Estudiante-Developer* - [villanuevand]()
-* **Agustin Muchutti** - *Estudiante-Developer* - [fulanitodetal]()
-* **Alderete Emanuel** - *Estudiante-Developer* - [villanuevand]()
-* **Gonzalez Olarte Carlos Samael** - *Estudiante-Developer* - [villanuevand]()
+* **Ivan Braslavsky Beveraggi** - *Estudiante-Developer* - []()
+* **Agustin Muchutti** - *Estudiante-Developer* - []()
+* **Alderete Emanuel** - *Estudiante-Developer* - []()
+* **Gonzalez Olarte Carlos Samael** - *Estudiante-Developer* - []()
 * **Rataric Lautaro** - *Estudiante-Developer* - [Rataricc](https://github.com/Rataricc)
 
 ## Expresiones de Gratitud 🎁
