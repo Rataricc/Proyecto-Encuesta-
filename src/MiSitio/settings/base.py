@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +39,23 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+LOCAL_APPS = [
+    
+]
+
+THIRD_APPS = [
+    
+]
+
+INSTALLED_APPS =  DJANGO_APPS + LOCAL_APPS + THIRD_APPS 
+# INSTALLED_APPS RECIBE UNA LISTA CON TODAS LAS APLICACIONES. 
+# THIRD_APPS SERIAN LAS APLICACIONES DE TERCEROS. 
+# LOCAL_APPS SERIAN LAS APLICACIONES INTERNAS. 
+# DJANGO_APPS SERIAN APLICACIONES PROPIAS DE DJANGO.
+    # INSTALLED_APPS POR ENDE SUMA TODAS LAS APLICACIONES QUE DEFINIMOS Y NOS DEVUELVE 
+        # UNA LISTA... POR QUE TANTO COMO: DJANGO_APPS, LOCAL_APPS, THIRD_APPS SON 
+            # LISTAS, ENTONCES LA VARIABLE QUE ALOJA ESAS LISTAS ES INSTALLED_APPS
+                # ENTONCES ESO NOS DEVOLVERIA UNA LISTA.
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -70,15 +87,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'MiSitio.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
@@ -123,3 +132,4 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
