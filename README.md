@@ -1,4 +1,4 @@
-# Proyecto-Encuesta-Preguntas-Juego-APP
+# Trivia
 
 _Objetivo: Desarrollar una aplicación web que represente un juego de preguntas y
 respuestas relacionado al aniversario de Provincialización del Chaco_ 

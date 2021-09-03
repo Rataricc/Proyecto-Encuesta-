@@ -1,0 +1,27 @@
+{% extends "base/base.html" %}
+
+{% block contenido %}
+	<div class="listarrr">
+		<div class="container">
+
+			<div class="row">
+				<div class="col">
+					<h1>Editar Usuario: {{usuarios.nombre}} {{usuarios.apellido}}</h1>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<form method="POST">{% csrf_token %}
+						{{form.as_p}}
+						<button type="submit" class="btn btn-primary">Guardar</button>
+						<a class="btn btn-danger" href="{% url 'usuarios:listar'%}">Cancelar</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock contenido %}

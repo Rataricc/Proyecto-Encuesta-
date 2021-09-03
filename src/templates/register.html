@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+
+{% block contenido %}
+ <div class="loginnn">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <h1>Registrarse</h1>
+                           <form method="POST">
+                                {% csrf_token %}
+                                {% include "includes/_form_errors.html" %}
+                                {{form.as_p}}
+                                <input type="submit" value="Registrate" class="button">
+                                <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                                <p>¿Ya tienes una cuenta?<a class="link" href="{% url 'user:login'  %}">Iniciar Sesion</a></p>
+                            </div>
+                           </form>
+{% endblock contenido %}
