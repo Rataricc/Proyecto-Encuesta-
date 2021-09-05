@@ -33,7 +33,9 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 * **Agustin Muchutti** - *Estudiante-Developer* - []()
 * **Alderete Emanuel** - *Estudiante-Developer* - []()
 * **Gonzalez Olarte Carlos Samael** - *Estudiante-Developer* - []()
-* **Rataric Lautaro** - *Estudiante-Developer* - [Rataricc](https://github.com/Rataricc)
+* **Rataric Lautaro** - *Estudiante-Developer* - 
+Nuestro Repositorio
+[Rataricc](https://github.com/Rataricc)
 
 ## Expresiones de Gratitud 🎁
 
