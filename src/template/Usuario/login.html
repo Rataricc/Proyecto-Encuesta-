@@ -1,10 +1,22 @@
-<form method="POST">
-	{% csrf_token %}
+{% extends "base.html" %}
 
-	{{form.as_p}}
 
-	<button type="submit">
-			Enviar
-	</button>
-
-</form>
+{% block contenido %}
+	<div class="loginnn">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Iniciar Sesion</h1>
+					<form method="POST">
+						{% csrf_token %}
+						{{form.as_p}}
+						  <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+         					<p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         					<p>¿No tienes una cuenta? <a class="link" href="{% url 'registro'  %}">Registrate </a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{% endblock contenido %}
