@@ -1,0 +1,29 @@
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background: white;
+}
+
+
+.container-all{
+	width: 100%; 
+	max-width: 1000px; 
+	margin: auto;
+	padding: 60px; 
+	background: white; 
+}
+
+
+
+.container-all img{
+	width: 300px; 
+	margin: auto;
+	display:block;
+}
+
+
