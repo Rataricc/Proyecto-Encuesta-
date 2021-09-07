@@ -44,7 +44,7 @@ def jugar(request):
 
 		QuizUser.validar_intento(pregunta_respondida, opcion_selecionada)
 
-		return redirect('resultado', pregunta_respondida.pk)
+		return redirect('quiz:resultado', pregunta_respondida.pk)
 
 	else:
 		pregunta = QuizUser.obtener_nuevas_preguntas()
@@ -97,7 +97,7 @@ def loginView(request):
 		password = form.cleaned_data.get("password")
 		usuario = authenticate(username=username, password=password)
 		login(request, usuario)
-		return redirect('inicio')
+		return redirect('quiz:inicio')
 
 	context = {
 		'form':form,
@@ -113,16 +113,14 @@ def registro(request):
 		form = RegistroFormulario(request.POST)
 		if form.is_valid():
 			form.save()
-			return redirect('login')
+			return redirect('quiz:login')
 	else:
 		form = RegistroFormulario()
 
 	context = {
 
 		'form':form,
-		'titulo': titulo
-
-	}
+		'titulo': titulo	}
 
 	return render(request, 'Usuario/registro.html', context)
 
