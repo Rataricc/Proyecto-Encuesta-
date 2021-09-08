@@ -1,2 +1,2 @@
 *.txt
-/local.py
+src/Aplicativo/settings/local.py
